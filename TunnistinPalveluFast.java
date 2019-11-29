@@ -43,7 +43,6 @@ class TunnistinPalveluFast {
 	private static double usedtris = 0.0000005;
 	private static double usedquads = 0.0000005;
 	private static double usedcinqs = 0.0000005;
-	private static double usedsexts = 1;
 	private static double usedwords = 0.0000005;
 	
 // this is the penalty value for unseen tokens
@@ -52,7 +51,7 @@ class TunnistinPalveluFast {
 	
 // This is the maximum length of used character n-grams (setting them to 0 gives the same outcome, but the identifier still divides the words)
 	
-	private static int maksimingram = 6;
+	private static int maksimingram = 5;
 	
 	private static int port=8082, maxConnections=0;
 	
@@ -95,7 +94,6 @@ class TunnistinPalveluFast {
 			kayLapi(usedtris, kieli, "tri");
 			kayLapi(usedquads, kieli, "quad");
 			kayLapi(usedcinqs, kieli, "cinq");
-			kayLapi(usedsexts, kieli, "sext");
 			kayLapi(usedwords, kieli, "word");
 		}
 		System.out.println("Ready to accept queries.");
